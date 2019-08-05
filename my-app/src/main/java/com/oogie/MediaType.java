@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.oogie;
 
 public class MediaType {
     private String title;

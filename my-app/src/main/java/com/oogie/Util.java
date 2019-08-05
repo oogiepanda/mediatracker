@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.oogie;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
