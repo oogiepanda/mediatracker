@@ -3,3 +3,4 @@ target
 .idea
 /my-app/.idea
 /my-app/target
+/my-app/my-app.iml

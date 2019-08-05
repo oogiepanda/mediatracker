@@ -31,13 +31,14 @@ public class Util {
 
     public void saveMediaTypes(List<MediaType> mediaTypes) {
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("target/mediafiles.txt"));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(Main.MEDIA_FILE_NAME));
             ObjectMapper objectMapper = new ObjectMapper();
 
             for (MediaType mt : mediaTypes) {
                 StringBuffer sb = new StringBuffer(mt.getClass().getName());
                 sb.append("|").append(objectMapper.writeValueAsString(mt)).append("\n");
                 writer.write(sb.toString());
+                System.out.println(sb.toString());
             }
             if (writer != null)
                 writer.close();
